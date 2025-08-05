@@ -1,7 +1,7 @@
 # Fuzzy Logic-Based Anomaly Detection and Correction in Smart Grid Systems
 
 ## Overview
-This project implements a fuzzy logic-based system for detecting and mitigating anomalies in a smart grid, developed as part of CM2602 Artificial Intelligence coursework (August 2023, Version 4). The system monitors voltage deviation, frequency variation, and load imbalance to detect anomalies and suggests mitigation actions like load balancing, power factor correction, frequency regulation, or shutdown.
+This project implements a fuzzy logic-based system for detecting and mitigating anomalies in a smart grid. The system monitors voltage deviation, frequency variation, and load imbalance to detect anomalies and suggests mitigation actions like load balancing, power factor correction, frequency regulation, or shutdown.
 
 ## Features
 - **Fuzzification**: Converts real-time grid data into fuzzy linguistic variables (e.g., Voltage Deviation: Low, Medium, High).
@@ -64,29 +64,26 @@ This project implements a fuzzy logic-based system for detecting and mitigating 
 
 ## Directory Structure
 - `main.py`: Core fuzzy logic implementation.
-- `data/sample_data.csv`: Simulated test data.
+- `data/data.csv`: Simulated test data.
 - `data/results.csv`: Output with anomaly scores and actions.
 - `screenshots/anomaly_output.png`: Visualization of results.
 - `requirements.txt`: Project dependencies.
 
 ## Usage
-- Update `data/sample_data.csv` with your grid data.
+- Update `data/data.csv` with your grid data.
 - Run `main.py` to process data and generate results.
 - Check `data/results.csv` for outputs and `screenshots/anomaly_output.png` for visualization.
 
 ## Test Cases
-The included `sample_data.csv` contains 6 test cases simulating:
+The included `data.csv` contains 6 test cases simulating:
 - Normal conditions (low voltage deviation, stable frequency, balanced load).
 - Warning conditions (medium/unstable/unbalanced inputs).
 - Critical conditions (high voltage deviation, unstable frequency, unbalanced load).
 
 ## Optimization
 - **False Positives**: Minimized by requiring multiple high inputs for critical anomalies.
-- **False Negatives**: Reduced by including edge-case rules (e.g., Rule 6).
+- **False Negatives**: Reduced by including edge-case rules.
 - **Grid Stability**: Actions prioritize load balancing and frequency regulation for moderate anomalies, reserving shutdown for critical cases.
 
 ## Screenshots
 ![Anomaly Detection Output](screenshots/anomaly_output.png)
-
-## License
-MIT License
