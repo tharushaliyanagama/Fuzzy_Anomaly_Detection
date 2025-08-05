@@ -1,0 +1,7 @@
+voltage_deviation,frequency_variation,load_imbalance,anomaly_score,action_output,action_description
+1.0,0.5,20.0,11.14,7.43,None
+4.0,2.0,50.0,58.5,50.72,Power Factor Correction
+8.0,4.0,80.0,62.2,59.01,Power Factor Correction
+9.5,4.5,90.0,68.64,64.37,Power Factor Correction
+3.0,1.5,40.0,41.71,23.87,Load Balancing
+6.0,3.5,70.0,62.37,55.72,Power Factor Correction
