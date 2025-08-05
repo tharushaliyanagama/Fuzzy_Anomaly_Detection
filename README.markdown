@@ -51,7 +51,7 @@ This project implements a fuzzy logic-based system for detecting and mitigating 
 ## Setup
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/fuzzy_anomaly_detection.git
+   git clone https://github.com/tharushaliyanagama/fuzzy_anomaly_detection.git
    ```
 2. Install dependencies:
    ```bash
